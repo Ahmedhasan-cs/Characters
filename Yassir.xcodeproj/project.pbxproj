@@ -29,9 +29,42 @@
 		E0BE79B82D5B72970099BCD0 /* YassirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YassirUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E0BE79F12D5BB1230099BCD0 /* Exceptions for "Yassir" folder in "YassirTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				App/AppCoordinator.swift,
+				App/CoordinatorView.swift,
+				Modules/CharacterDetails/CharacterDetailsView.swift,
+				Modules/CharacterDetails/CharacterDetailsViewModel.swift,
+				Modules/CharacterList/CharacterListView.swift,
+				Modules/CharacterList/CharacterListViewModel.swift,
+				Modules/CharacterList/CharacterService.swift,
+			);
+			target = E0BE79AD2D5B72970099BCD0 /* YassirTests */;
+		};
+		E0BE79F22D5BB1230099BCD0 /* Exceptions for "Yassir" folder in "YassirUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				App/AppCoordinator.swift,
+				App/CoordinatorView.swift,
+				Modules/CharacterDetails/CharacterDetailsView.swift,
+				Modules/CharacterDetails/CharacterDetailsViewModel.swift,
+				Modules/CharacterList/CharacterListView.swift,
+				Modules/CharacterList/CharacterListViewModel.swift,
+				Modules/CharacterList/CharacterService.swift,
+			);
+			target = E0BE79B72D5B72970099BCD0 /* YassirUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E0BE79A02D5B72940099BCD0 /* Yassir */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E0BE79F12D5BB1230099BCD0 /* Exceptions for "Yassir" folder in "YassirTests" target */,
+				E0BE79F22D5BB1230099BCD0 /* Exceptions for "Yassir" folder in "YassirUITests" target */,
+			);
 			path = Yassir;
 			sourceTree = "<group>";
 		};

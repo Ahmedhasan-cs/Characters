@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct YassirApp: App {
+    @StateObject var coordinator = AppCoordinator()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CoordinatorView(coordinator: coordinator)
+                .onAppear {
+                    coordinator.start()
+                }
         }
     }
 }
