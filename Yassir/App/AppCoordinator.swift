@@ -13,11 +13,11 @@ protocol Coordinator: AnyObject {
 
 import SwiftUI
 
-class AppCoordinator: ObservableObject {
+public class AppCoordinator: ObservableObject {
     @Published var navigationPath = NavigationPath()
 
     func start() {
-        navigationPath = NavigationPath() // Ensures fresh start
+        navigationPath = NavigationPath()
     }
 
     func goToScreen(_ screen: AppScreen) {
@@ -31,12 +31,12 @@ class AppCoordinator: ObservableObject {
     }
 
     func resetToRoot() {
-        navigationPath = NavigationPath() // Clears navigation history
+        navigationPath = NavigationPath()
     }
 }
 
 enum AppScreen: Hashable {
     case home
-    case details(item: String)
+    case details(character: Character)
 }
 

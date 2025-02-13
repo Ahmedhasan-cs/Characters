@@ -12,13 +12,14 @@ struct CoordinatorView: View {
 
     var body: some View {
         NavigationStack(path: $coordinator.navigationPath) {
-            CharacterListView(viewModel: CharacterListViewModel(coordinator: coordinator))
+            CharacterListDI(coordinator: coordinator).launch()
                 .navigationDestination(for: AppScreen.self) { screen in
                     switch screen {
                         case .home:
-                            CharacterListView(viewModel: CharacterListViewModel(coordinator: coordinator))
-                        case .details(_):
-                            CharacterDetailsView(coordinator: coordinator)
+                            CharacterListDI(coordinator: coordinator).launch()
+                        case .details(let character):
+                            CharacterDetails(coordinator: coordinator)
+                            .launch(character: character)
                     }
                    
                 }

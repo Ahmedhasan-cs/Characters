@@ -35,11 +35,25 @@
 			membershipExceptions = (
 				App/AppCoordinator.swift,
 				App/CoordinatorView.swift,
-				Modules/CharacterDetails/CharacterDetailsView.swift,
-				Modules/CharacterDetails/CharacterDetailsViewModel.swift,
-				Modules/CharacterList/CharacterListView.swift,
-				Modules/CharacterList/CharacterListViewModel.swift,
-				Modules/CharacterList/CharacterService.swift,
+				Modules/CharacterDetails/DI/CharacterDetailsDI.swift,
+				Modules/CharacterDetails/View/CharacterDetailsView.swift,
+				Modules/CharacterDetails/ViewModel/CharacterDetailsViewModel.swift,
+				Modules/CharacterList/DI/CharacterListDI.swift,
+				Modules/CharacterList/Repo/CharacterListRepo.swift,
+				Modules/CharacterList/View/CharacterItemView.swift,
+				Modules/CharacterList/View/CharacterListView.swift,
+				Modules/CharacterList/View/FilterOptionsView.swift,
+				Modules/CharacterList/ViewModel/CharacterListViewModel.swift,
+				Util/BaseViewModel.swift,
+				Util/Models/CharactersPage.swift,
+				Util/NetworkManager/APIHandler.swift,
+				Util/NetworkManager/EndPointsManager.swift,
+				Util/NetworkManager/Mocks/jsonData/CharactersList.json,
+				Util/NetworkManager/Mocks/jsonData/CharactersListAlive.json,
+				Util/NetworkManager/Mocks/jsonData/CharactersListError.json,
+				Util/NetworkManager/Mocks/jsonData/CharactersListNextPage.json,
+				Util/NetworkManager/Mocks/NetworkSessionMock.swift,
+				Util/NetworkManager/NetworkSession.swift,
 			);
 			target = E0BE79AD2D5B72970099BCD0 /* YassirTests */;
 		};
@@ -48,11 +62,25 @@
 			membershipExceptions = (
 				App/AppCoordinator.swift,
 				App/CoordinatorView.swift,
-				Modules/CharacterDetails/CharacterDetailsView.swift,
-				Modules/CharacterDetails/CharacterDetailsViewModel.swift,
-				Modules/CharacterList/CharacterListView.swift,
-				Modules/CharacterList/CharacterListViewModel.swift,
-				Modules/CharacterList/CharacterService.swift,
+				Modules/CharacterDetails/DI/CharacterDetailsDI.swift,
+				Modules/CharacterDetails/View/CharacterDetailsView.swift,
+				Modules/CharacterDetails/ViewModel/CharacterDetailsViewModel.swift,
+				Modules/CharacterList/DI/CharacterListDI.swift,
+				Modules/CharacterList/Repo/CharacterListRepo.swift,
+				Modules/CharacterList/View/CharacterItemView.swift,
+				Modules/CharacterList/View/CharacterListView.swift,
+				Modules/CharacterList/View/FilterOptionsView.swift,
+				Modules/CharacterList/ViewModel/CharacterListViewModel.swift,
+				Util/BaseViewModel.swift,
+				Util/Models/CharactersPage.swift,
+				Util/NetworkManager/APIHandler.swift,
+				Util/NetworkManager/EndPointsManager.swift,
+				Util/NetworkManager/Mocks/jsonData/CharactersList.json,
+				Util/NetworkManager/Mocks/jsonData/CharactersListAlive.json,
+				Util/NetworkManager/Mocks/jsonData/CharactersListError.json,
+				Util/NetworkManager/Mocks/jsonData/CharactersListNextPage.json,
+				Util/NetworkManager/Mocks/NetworkSessionMock.swift,
+				Util/NetworkManager/NetworkSession.swift,
 			);
 			target = E0BE79B72D5B72970099BCD0 /* YassirUITests */;
 		};
@@ -111,6 +139,7 @@
 				E0BE79A02D5B72940099BCD0 /* Yassir */,
 				E0BE79B12D5B72970099BCD0 /* YassirTests */,
 				E0BE79BB2D5B72970099BCD0 /* YassirUITests */,
+				E0BE7A892D5CE69B0099BCD0 /* Frameworks */,
 				E0BE799F2D5B72940099BCD0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,6 +152,13 @@
 				E0BE79B82D5B72970099BCD0 /* YassirUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E0BE7A892D5CE69B0099BCD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +264,8 @@
 			);
 			mainGroup = E0BE79952D5B72940099BCD0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E0BE799F2D5B72940099BCD0 /* Products */;
 			projectDirPath = "";
