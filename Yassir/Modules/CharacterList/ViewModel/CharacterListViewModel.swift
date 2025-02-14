@@ -19,7 +19,7 @@ public protocol CharacterListViewModeling: ObservableObject, BaseViewModel {
 }
 
 class CharacterListViewModel: CharacterListViewModeling {
-    internal var repo: CharacterListReposing
+    var repo: CharacterListReposing
     private var coordinator: AppCoordinator
     private var pageInfo: PageInfo?
     @Published var characters: [Character] = []
