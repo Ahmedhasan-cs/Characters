@@ -9,3 +9,31 @@ time).
 status (alive, dead, unknown).
 - Navigation to Details view.
 - Provide a detailed view of a selected character.
+
+### Non-Functional:
+- Performance:
+  - Caching API and Images.
+
+- Scalability:
+  - Modularity.
+  
+- Reliability:
+  - Unit tests.
+
+- Dependency Manager:
+  - No external dependencies used.
+  
+## System Design
+- Language:
+  - Swift 5
+- UI:
+  - SwiftUI
+- Principals and Patterns:
+  - MVVM Architecture
+  - SOLID Principles:
+    - Single Responsibility
+    - Interface Segregation
+    - Dependency Inversion 
+  - Applying dependency injection.
+  - Coordinator pattern for navigation.
+
